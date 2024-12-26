@@ -12,6 +12,9 @@ hooks:
     - location: scripts/configure_permissions.sh
       timeout: 300
       runas: root
+    - location: scripts/artisan_commands.sh
+      timeout: 300
+      runas: root
   ApplicationStart:
     - location: scripts/restart_services.sh
       timeout: 300
